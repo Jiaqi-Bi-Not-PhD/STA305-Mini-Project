@@ -1,0 +1,151 @@
+\documentclass[a4paper,11pt]{article}
+
+\setlength{\oddsidemargin}{0 in}
+\setlength{\evensidemargin}{0 in}
+\setlength{\topmargin}{-0.6 in}
+\setlength{\textwidth}{6.5 in}
+\setlength{\textheight}{8.5 in}
+\setlength{\headsep}{0.75 in}
+\setlength{\parindent}{0 in}
+\setlength{\parskip}{0.1 in}
+
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{tikz-cd}
+\usepackage{mathrsfs}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage{enumitem}
+\usepackage{yfonts}
+\usepackage{ dsfont }
+\usepackage{soul}
+\usepackage{tabularx}
+\usepackage{setspace}
+\usepackage[
+    type={CC},
+    modifier={by-nc-sa},
+    version={4.0},
+]{doclicense}
+
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{lem}[thm]{Lemma}
+
+\newtheorem{defn}[thm]{Definition}
+\newtheorem{eg}[thm]{Example}
+\newtheorem{ex}[thm]{Exercise}
+\newtheorem{conj}[thm]{Conjecture}
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{claim}[thm]{Claim}
+\newtheorem{rmk}[thm]{Remark}
+
+\newcommand{\ie}{\emph{i.e.} }
+\newcommand{\cf}{\emph{cf.} }
+\newcommand{\into}{\hookrightarrow}
+\newcommand{\dirac}{\slashed{\partial}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\LieT}{\mathfrak{t}}
+\newcommand{\T}{\mathbb{T}}
+\newcommand{\A}{\mathds{A}}
+
+\DeclareMathOperator{\lcm}{lcm}
+\DeclareMathOperator{\ord}{ord}
+
+
+\title{\textbf{STA305 Mini Project Notes}}
+
+\author{Jiaqi Bi, University of Toronto}
+
+
+\begin{document}
+
+\setstretch{1.1}
+\begin{titlepage}
+\end{titlepage}
+
+\maketitle
+\vspace*{\fill}
+\doclicenseThis
+
+\newpage
+
+\section{First Discussion}
+Our topic will be ``If you shave hair, it comes back thicker." An experiment needs to be carried out with realistic situation and plan. The \underline{target population} for our experiment design will be the whole population in the world, the sample can be 50-80 people with different age groups (\underline{sample size}). The \underline{experimental unit} will be hairs selected for sample purposes of our experiment. Different treatment for two groups (\underline{2 groups}): 
+\begin{itemize}
+\item One group with treatment: Shave the hair;
+\item One group without treatment: Does not shave the hair.
+\end{itemize}
+Note that treatment groups and control groups are \underline{identical} in every possible way, except for the treatment. I.e., minimize the confounding variables. 
+
+\hl{Questions raised during the beforehand discussion:}
+\begin{enumerate}
+\item \hl{How do you define ``thicker"? Speed of growing, or others?}
+\item \hl{Does the "shave" mean totally shaved, or shave a little bit?}
+\item \hl{Does only nominal variable count as ``Factors"?}
+\item \hl{Should we consider the race in our experimental design?}
+\end{enumerate}
+
+\underline{Variables} during the experiment: response variables will be \underline{(See Question 1)}, the independent variables will be ages, genders, diet habits, races, ... The response variable is an Objective Response (If we do measurements). The factors of experiment includes: Gender, with levels of males and females; Races, with levels of Black, Caucasian, Asian, Hispanic, etc. The experiment lies under a \underline{Between-Subjects design} since we only decide about if the experimental unit shaves or not. 
+
+We plan to take this experiment as a \underline{non-repeated measure design}. The nuisance variables might occur in the experiment has: 
+\begin{itemize}
+\item Sleeping hours
+\item Vitamin consumption
+\item Diet habits
+\end{itemize}
+
+\textbf{Principles of the experiment:} 
+\begin{itemize}
+\item Control: \hl{We have equally distributed number of different genders}, they all have great health conditions, same everyday eating habits, no extra nutritions intake. 
+\item Blocking: We will treat \underline{age groups} as our blocks, two types of daily pressure (self identified high-pressure, or low-pressure) 
+\item Randomization: After, we randomly assign who have different sleeping habits to different groups because we cannot control or block their sleeping habits. 
+\item Replication: \hl{Treatment Level}: We take many participants with same races to shave his/her hairs, 
+Experiment Level: We can replicate the experiment in other regions. 
+\end{itemize}
+
+\subsection{Blinding, by Jiaqi Bi \& Lanruo Li}
+\textbf{Possible scheme 1: No blindings}
+
+Since the researchers and participants both will know if their hairs are shaved obviously, and after one month, researchers will measure the thickness. The measurement is an objective measures, therefore knowing the treatment does not effect the responses. 
+
+\textbf{Possible scheme 2: Single blinding}
+
+Our participant is going to know whether he/she is about to take the treatment, i.e., shave their hairs. However, our researchers that are going to measure the thickness will not know whether the participant has shaved hairs before or not because the measurement is a subjective measures, such that if they know the treatment beforehand, it might affect their judgments. 
+
+
+
+
+\section{Reminders}
+Office hours: Thursday 9:30-10:30AM EDT (Toronto Time)
+
+\subsection{Work Assign}
+
+Jiaqi Bi, Lanruo Li, Yuika Cho: Blinding 
+
+Lei Cao, Le Shen: Balance 
+
+Mengyu Lei, Yirun Mao: Control Group 
+
+\textbf{Deadline: 8:30PM Wed.  (Toronto Time); 8:30AM Thur. (Beijing)}
+
+\textbf{Meeting before office hour: 8:00AM Thurs.  (Toronto Time); 8:00PM Thurs. (Beijing)}
+
+\textbf{Deadline of Mini Project Group Work: Before Sunday!}
+
+
+
+
+
+
+
+\end{document}
+
+
+
+
