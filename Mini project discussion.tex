@@ -11,6 +11,7 @@
 
 \usepackage[english]{babel}
 \usepackage[utf8]{inputenc}
+\usepackage{tikz}
 \usepackage{amsmath}
 \usepackage{graphicx}
 \usepackage{amssymb}
@@ -29,6 +30,7 @@
     modifier={by-nc-nd},
     version={4.0},
 ]{doclicense}
+\usetikzlibrary{matrix,shapes,arrows,positioning,chains}
 
 \newtheorem{thm}{Theorem}[section]
 \newtheorem{lem}[thm]{Lemma}
@@ -64,6 +66,47 @@
 
 
 \begin{document}
+
+% Define block styles
+\tikzset{
+decision/.style={
+    diamond,
+    draw,
+    text width=4em,
+    text badly centered,
+    inner sep=0pt
+},
+block/.style={
+    rectangle,
+    draw,
+    text width=10em,
+    text centered,
+    rounded corners
+},
+cloud/.style={
+    draw,
+    ellipse,
+    minimum height=2em
+},
+descr/.style={
+    fill=white,
+    inner sep=2.5pt
+},
+connector/.style={
+    -latex,
+    font=\scriptsize
+},
+rectangle connector/.style={
+    connector,
+    to path={(\tikztostart) -- ++(#1,0pt) \tikztonodes |- (\tikztotarget) },
+    pos=0.5
+},
+rectangle connector/.default=-2cm,
+straight connector/.style={
+    connector,
+    to path=--(\tikztotarget) \tikztonodes
+}
+}
 
 \setstretch{1.1}
 \begin{titlepage}
@@ -140,7 +183,31 @@ Length of hair strand: starting from root and measure 5 cm down for both before 
 Before samples: we shave the original hair from the root and keep it with a length of 5 cm
 After samples: when the shaved area of hair grows back, we do the same thing as the before samples.
 
+\begin{tikzpicture}
+\matrix (m)[matrix of nodes, column  sep=2cm,row  sep=8mm, align=center, nodes={rectangle,draw, anchor=center} ]{
+    |[block]| {Start}              &  \\
+    |[block]| {Choose an area of hair (i.e., above left ear) }               &                                           \\
+    |[block]| {Shave from root}          &                                             \\
+   |[block]| {measure 5cm\footnotemark from here}    &       |[block]| {Let it grow back}                                       \\
+    |[block]| {Cut the extra length, keep 5cm leangth}         &      |[block]| {Shave from root}                     \\
+            &    |[block]| {Measure 5cm\footnotemark[1] from root}                              \\
+                     &       |[block]| {Get rid of extra length and keep 5cm length of hair}                                 \\       
+};
+\path [>=latex,->] (m-1-1) edge (m-2-1);
+\path [>=latex,->] (m-2-1) edge (m-3-1);
+\path [>=latex,->] (m-3-1) edge (m-4-1);
+\path [>=latex,->] (m-4-1) edge (m-5-1);
+\path [>=latex,->] (m-3-1) edge (m-4-2);
+\path [>=latex,->] (m-4-2) edge (m-5-2);
+\path [>=latex,->] (m-5-2) edge (m-6-2);
+\path [>=latex,->] (m-6-2) edge (m-7-2);
 
+
+\end{tikzpicture}
+
+\footnotetext{The length is subject to change if males have shorter hair in average}
+
+\newpage
 
 
 
