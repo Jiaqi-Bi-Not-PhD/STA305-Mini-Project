@@ -24,6 +24,7 @@
 \usepackage{yfonts}
 \usepackage{ dsfont }
 \usepackage{soul}
+\usepackage{ulem,xpatch}
 \usepackage{tabularx}
 \usepackage{setspace}
 \usepackage[
@@ -32,6 +33,13 @@
     version={4.0},
 ]{doclicense}
 \usetikzlibrary{matrix,shapes,arrows,positioning,chains}
+
+
+\newcommand{\soutthick}[1]{%
+    \renewcommand{\ULthickness}{2.4pt}%
+       \sout{#1}%
+    \renewcommand{\ULthickness}{.4pt}% Resetting to ulem default
+}
 
 \newtheorem{thm}{Theorem}[section]
 \newtheorem{lem}[thm]{Lemma}
@@ -227,7 +235,7 @@ Lei Cao, Le Shen: Balance \colorbox{green}{DONE!}
 
 Mengyu Lei, Yirun Mao: Control Group \colorbox{green}{DONE!}
 
-\textbf{Deadline: 8:30PM Wed.  (Toronto Time); 8:30AM Thur. (Beijing)}
+\sout{\textbf{Deadline: 8:30PM Wed.  (Toronto Time); 8:30AM Thur. (Beijing)}}
 
 \textbf{Meeting before office hour: 8:00AM Thurs.  (Toronto Time); 8:00PM Thurs. (Beijing)}
 
