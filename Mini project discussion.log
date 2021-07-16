@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.9.16)  15 JUL 2021 23:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.9.16)  15 JUL 2021 23:21
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1147,16 +1147,9 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 275.
  (./Mini project discussion.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 275.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 275.
-
-
-Package rerunfilecheck Warning: File `"Mini project discussion".out' has change
-d.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `"Mini project discussion".out':
-(rerunfilecheck)             Before: F4FAD6DC604519FBE560ADF5150FF0A7;526
-(rerunfilecheck)             After:  C449DE7021913ABE99E7AFEFFAC11271;526.
+Package rerunfilecheck Info: File `"Mini project discussion".out' has not chang
+ed.
+(rerunfilecheck)             Checksum: C449DE7021913ABE99E7AFEFFAC11271;526.
  ) 
 Here is how much of TeX's memory you used:
  32243 strings out of 492616
@@ -1171,7 +1164,7 @@ Here is how much of TeX's memory you used:
 </usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></
 usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></us
 r/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on "Mini project discussion.pdf" (5 pages, 89299 bytes).
+Output written on "Mini project discussion.pdf" (5 pages, 89427 bytes).
 PDF statistics:
  121 PDF objects out of 1000 (max. 8388607)
  91 compressed objects within 1 object stream
